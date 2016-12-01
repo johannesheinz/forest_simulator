@@ -1,0 +1,6 @@
+{
+  "name": "Forest Simulator",
+  "tagline": "A simple JavaFX application that lets you create a 3D image of trees.",
+  "body": "## Hotkeys:\r\n| Key          | Action                                                     |\r\n|:-------------|:-----------------------------------------------------------|\r\n| **`R`:**     | Resets the camera to initial view                          |\r\n| **`F`:**     | Sets the camera to front view                              |\r\n| **`T`:**     | Sets the camera to top view                                |\r\n| **`X`:**     | Show / hide coordinate axis                                |\r\n| **`Space`:** | Plant a new tree with a random height at a random position |\r\n\r\n## Change perspective:\r\n| Key                     | Action                     |\r\n|:------------------------|:---------------------------|\r\n| **`Shift + mouse`:**    | Faster movement            |\r\n| **`Ctrl + mouse`:**     | Slower movement            |\r\n| **Drag left mouse:**    | Rotate camera around scene |\r\n| **Scroll mouse wheel:** | Zoom in / out              |\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
