@@ -31,7 +31,7 @@ public class Floor extends Box {
 		setDrawMode(DrawMode.FILL);
 		setOpacity(1.0);
 
-		setTranslateY(0.49 * Constants.FLOOR_WIDTH);
+		setTranslateY(0.48 * Constants.FLOOR_WIDTH);
 	}
 	
 	public static Floor getInstance() {
