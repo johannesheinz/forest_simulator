@@ -1,111 +1,118 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Forest Simulator : A simple JavaFX application that lets you create a 3D image of trees.">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="description" content="Forest Simulator : A simple JavaFX application that lets you create a 3D image of trees.">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <title>Forest Simulator</title>
+    </head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <body>
+        <!-- HEADER -->
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+                <a id="forkme_banner" href="https://github.com/johannesheinz/forest_simulator">View on GitHub</a>
 
-    <title>Forest Simulator</title>
-  </head>
+                <h1 id="project_title">Forest Simulator</h1>
+                <h2 id="project_tagline">A simple JavaFX application to display 3D images of trees.</h2>
 
-  <body>
+                <section id="downloads">
+                    <a class="zip_download_link" href="https://github.com/johannesheinz/forest_simulator/zipball/master">Download this project as a .zip file</a>
+                    <a class="tar_download_link" href="https://github.com/johannesheinz/forest_simulator/tarball/master">Download this project as a tar.gz file</a>
+                </section>
+            </header>
+        </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/johannesheinz/forest_simulator">View on GitHub</a>
+        <!-- MAIN CONTENT -->
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+                <h2>
+                    <a id="hotkeys" class="anchor" href="#hotkeys" aria-hidden="true">
+                        <span aria-hidden="true" class="octicon octicon-link"></span>
+                    </a>
+                    <span>Hotkeys:</span>
+                </h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th align="left">Key</th>
+                            <th align="left">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="left"><strong><code>R</code>:</strong></td>
+                            <td align="left">Resets the camera to initial view</td>
+                        </tr>
+                        <tr>
+                            <td align="left"><strong><code>F</code>:</strong></td>
+                            <td align="left">Sets the camera to front view</td>
+                        </tr>
+                        <tr>
+                            <td align="left"><strong><code>T</code>:</strong></td>
+                            <td align="left">Sets the camera to top view</td>
+                        </tr>
+                        <tr>
+                            <td align="left"><strong><code>X</code>:</strong></td>
+                            <td align="left">Show / hide coordinate axis</td>
+                        </tr>
+                        <tr>
+                            <td align="left"><strong><code>Space</code>:</strong></td>
+                            <td align="left">Plant a new tree with a random height at a random position</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-          <h1 id="project_title">Forest Simulator</h1>
-          <h2 id="project_tagline">A simple JavaFX application that lets you create a 3D image of trees.</h2>
+                <h2>
+                    <a id="change-perspective" class="anchor" href="#change-perspective" aria-hidden="true">
+                        <span aria-hidden="true" class="octicon octicon-link"></span>
+                    </a>
+                    <span>Change perspective:</span>
+                </h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/johannesheinz/forest_simulator/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/johannesheinz/forest_simulator/tarball/master">Download this project as a tar.gz file</a>
+                <table>
+                    <thead>
+                        <tr>
+                            <th align="left">Key</th>
+                            <th align="left">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="left"><strong><code>Shift + mouse</code>:</strong></td>
+                            <td align="left">Faster movement</td>
+                        </tr>
+                        <tr>
+                            <td align="left"><strong><code>Ctrl + mouse</code>:</strong></td>
+                            <td align="left">Slower movement</td>
+                        </tr>
+                        <tr>
+                            <td align="left"><strong>Drag left mouse:</strong></td>
+                            <td align="left">Rotate camera around scene</td>
+                        </tr>
+                        <tr>
+                            <td align="left"><strong>Scroll mouse wheel:</strong></td>
+                            <td align="left">Zoom in / out</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-        </header>
-    </div>
+        </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>
-<a id="hotkeys" class="anchor" href="#hotkeys" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hotkeys:</h2>
-
-<table>
-<thead>
-<tr>
-<th align="left">Key</th>
-<th align="left">Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><strong><code>R</code>:</strong></td>
-<td align="left">Resets the camera to initial view</td>
-</tr>
-<tr>
-<td align="left"><strong><code>F</code>:</strong></td>
-<td align="left">Sets the camera to front view</td>
-</tr>
-<tr>
-<td align="left"><strong><code>T</code>:</strong></td>
-<td align="left">Sets the camera to top view</td>
-</tr>
-<tr>
-<td align="left"><strong><code>X</code>:</strong></td>
-<td align="left">Show / hide coordinate axis</td>
-</tr>
-<tr>
-<td align="left"><strong><code>Space</code>:</strong></td>
-<td align="left">Plant a new tree with a random height at a random position</td>
-</tr>
-</tbody>
-</table>
-
-<h2>
-<a id="change-perspective" class="anchor" href="#change-perspective" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change perspective:</h2>
-
-<table>
-<thead>
-<tr>
-<th align="left">Key</th>
-<th align="left">Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><strong><code>Shift + mouse</code>:</strong></td>
-<td align="left">Faster movement</td>
-</tr>
-<tr>
-<td align="left"><strong><code>Ctrl + mouse</code>:</strong></td>
-<td align="left">Slower movement</td>
-</tr>
-<tr>
-<td align="left"><strong>Drag left mouse:</strong></td>
-<td align="left">Rotate camera around scene</td>
-</tr>
-<tr>
-<td align="left"><strong>Scroll mouse wheel:</strong></td>
-<td align="left">Zoom in / out</td>
-</tr>
-</tbody>
-</table>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Forest Simulator maintained by <a href="https://github.com/johannesheinz">johannesheinz</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+        <!-- FOOTER  -->
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p style="float:right;">
+                    <a href="https://github.com/johannesheinz" class="avatar">
+                        <img src="https://github.com/johannesheinz.png?size=70" width="70" height="70">
+                    </a>
+                </p>
+                <p class="copyright">Forest Simulator is maintained by <a href="https://github.com/johannesheinz">Johannes</a> on GitHub.</p>
+                <p>Published via <a href="https://pages.github.com">GitHub Pages</p>
+            </footer>
+        </div>
+    </body>
 </html>
