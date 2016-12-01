@@ -62,16 +62,10 @@ public class Camera extends PerspectiveCamera {
 		cameraTranslate.setZ(translateZ);
 	}
 
-	public void zoomIn() {
-		setScaleX(Constants.CAMERA_ZOOM_IN * getScaleX());
-		setScaleY(Constants.CAMERA_ZOOM_IN * getScaleY());
-		setScaleZ(Constants.CAMERA_ZOOM_IN * getScaleZ());
-	}
-
-	public void zoomOut() {
-		setScaleX(Constants.CAMERA_ZOOM_OUT * getScaleX());
-		setScaleY(Constants.CAMERA_ZOOM_OUT * getScaleY());
-		setScaleZ(Constants.CAMERA_ZOOM_OUT * getScaleZ());
+	public void zoom(double modifier) {
+		setScaleX(modifier * getScaleX());
+		setScaleY(modifier * getScaleY());
+		setScaleZ(modifier * getScaleZ());
 	}
 
 	private void resetZoom() {

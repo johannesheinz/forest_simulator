@@ -86,11 +86,29 @@ public class CameraController implements EventHandler {
 	@Override
 	public void handleScroll(ScrollEvent event) {
 
-		if (event.getDeltaY() < 0) {
-			camera.zoomOut();
+		double modifier;
 
+		boolean zoomOut = event.getDeltaY() < 0;
+		boolean slow = event.isControlDown();
+		boolean fast = event.isShiftDown();
+
+		if (zoomOut) {
+			if (slow) {
+				modifier = Constants.CAMERA_ZOOM_OUT_SLOW;
+			} else if (fast) {
+				modifier = Constants.CAMERA_ZOOM_OUT_FAST;
+			} else {
+				modifier = Constants.CAMERA_ZOOM_OUT_DEFAULT;
+			}
 		} else {
-			camera.zoomIn();
+			if (slow) {
+				modifier = Constants.CAMERA_ZOOM_IN_SLOW;
+			} else if (fast) {
+				modifier = Constants.CAMERA_ZOOM_IN_FAST;
+			} else {
+				modifier = Constants.CAMERA_ZOOM_IN_DEFAULT;
+			}
 		}
+		camera.zoom(modifier);
 	}
 }
