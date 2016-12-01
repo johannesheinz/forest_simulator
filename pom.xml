@@ -6,7 +6,7 @@
 
     <groupId>de.johannesheinz</groupId>
     <artifactId>forest_simulator</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
 
     <name>Forest Simulator</name>
     <description>A simple JavaFX application that lets you create a 3D image of trees.</description>
